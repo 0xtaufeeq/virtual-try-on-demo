@@ -15,16 +15,16 @@ garment_image = st.file_uploader("Upload Outfit Image", type=["png", "jpg", "jpe
 garment_description = st.text_input("Enter Outfit Description")
 
 # Checkbox for is_checked
-is_checked = st.checkbox("Use Auto Generated Mask (Takes a few seconds)", value=True)
+is_checked = True
 
 # Checkbox for is_checked_crop
-is_checked_crop = st.checkbox("Use Auto Crop & Resizing (Not Recomended)", value=False)
+is_checked_crop = False
 
 # Denoising steps
-denoise_steps = st.number_input("Denoising Steps", value=30, min_value=0)
+denoise_steps = 30
 
 # Seed
-seed = st.number_input("Seed", value=42, min_value=0)
+seed = 42
 
 # Button to submit
 if st.button("Try On"):
@@ -61,7 +61,6 @@ if st.button("Try On"):
 
                 # Display results
                 st.image(result[0], caption="Output Image")
-                st.image(result[1], caption="Masked Image Output")
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     else:
