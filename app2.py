@@ -14,8 +14,14 @@ background_image = st.file_uploader("Upload Model Image", type=["png", "jpg", "j
 
 # Predefined garment examples
 garment_examples = [
-    ("https://nymbo-virtual-try-on.hf.space/file=/tmp/gradio/c6a00bd87f53c541a88f163290a869d3fea67bd8/09133_00.jpg", "White Pretty Dress"),
-    ("https://i.imgur.com/0DKjAml.jpeg", "Blue T-Shirt")
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/1.jpg", "Brown Dress"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/2.jpg", "Blue Top"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/3.jpg", "Black Top"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/4.jpg", "Blue T-Shirt"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/5.jpg", "White T-Shirt"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/6.jpg", "Black Crop Top"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/7.jpg", "Black Hoodie"),
+    ("https://raw.githubusercontent.com/TaufeeqRiyaz/virtual-try-on-demo/main/8.jpg", "Beige Shirt"),
 ]
 
 # Display predefined outfit images
