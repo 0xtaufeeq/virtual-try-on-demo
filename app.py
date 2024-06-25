@@ -2,7 +2,7 @@ import streamlit as st
 from gradio_client import Client, file
 import tempfile
 
-client = Client("Nymbo/Virtual-Try-On")
+client = Client("Nymbo/Virtual-Try-On", 60.0)
 
 st.title("Virtual Try-On")
 
