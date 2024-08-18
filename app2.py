@@ -5,7 +5,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-client = Client("Nymbo/Virtual-Try-On", 120.0)
+client = Client("Nymbo/Virtual-Try-On", 120.0, ssl_verify=False)
 
 st.title("Virtual Try-On")
 
